@@ -6,7 +6,7 @@ TARGET = webp
 
 .PHONY: clean
 
-$(TARGET): $(wildcard $(SRC))
+$(TARGET).js $(TARGET).wasm: $(wildcard $(SRC))
 	$(CC) $(CFLAGS) -I$(INCLUDE) $(SRC) -o $(TARGET).js
 
 clean:
