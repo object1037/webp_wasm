@@ -1,0 +1,2 @@
+-I/opt/homebrew/Cellar/emscripten/3.1.46/libexec/cache/sysroot/include
+-I./libwebp
