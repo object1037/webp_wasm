@@ -1,13 +1,7 @@
 # wasm webp convert
 
 https://developer.mozilla.org/ja/docs/WebAssembly/existing_C_to_wasm
-
-```shell
-emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' \
-  -I libwebp \
-  webp.c -o webp.js \
-  libwebp/src/{dec,dutils}/*.c
-```
+https://web.dev/articles/emscripting-a-c-library?hl=ja#get_an_image_from_javascript_into_wasm
 
 ```shell
 python -m http.server
